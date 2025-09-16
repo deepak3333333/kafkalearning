@@ -1,7 +1,5 @@
 from confluent_kafka import Producer
 from admin import Admin
-
-
 class ProducerClass:
     def __init__(self, bootstrap_servers, topic):
         self.bootstrap_servers = bootstrap_servers
@@ -19,8 +17,8 @@ class ProducerClass:
 
 
 bootstrap_servers = "localhost:19092"
-topic = "yesdeepakRTR"
-a=Admin(bootstrap_servers)
+topic = "kumar"
+a = Admin(bootstrap_servers)
 a.create_topic(topic)
 send_data = ProducerClass(bootstrap_servers, topic)
 
