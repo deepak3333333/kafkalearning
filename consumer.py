@@ -10,7 +10,7 @@ class ConsumerClass:
         self.consumer.subscribe([self.topic])
         try:
             while True:
-                msg = self.consumer.poll(1.0)
+                msg = self.consumer.poll(10.0)
                 if msg is None:
                     continue
                 if msg.error():

@@ -31,3 +31,8 @@ try:
 except KeyboardInterrupt:
     send_data.commit()
     print("Message sent successfully")
+
+
+
+# import json
+# serilize_data = json.dumps({"name": "kumar", "age": 24}).encode('utf-8')
